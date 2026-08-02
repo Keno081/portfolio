@@ -4,38 +4,88 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Keno &middot; Projekte</title>
+    <meta name="description" content="Projekte von Keno &ndash; kleine Web-Spiele und Tools.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
-        <h1>Keno&apos;s Projekte</h1>
-        <p>Ein paar Spiele und Tools, die ich gebaut habe.</p>
+    <div class="bg-blobs" aria-hidden="true">
+        <span class="blob blob-a"></span>
+        <span class="blob blob-b"></span>
+        <span class="blob blob-c"></span>
+    </div>
+
+    <header class="site-header">
+        <a class="brand" href="#top">Keno</a>
+        <nav class="site-nav">
+            <a href="#projects">Projekte</a>
+            <a href="#about">&Uuml;ber mich</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
     </header>
 
-    <main class="grid">
-        <a class="card" href="https://schwimmen.keno-003.workers.dev" target="_blank" rel="noopener">
-            <div class="card-icon">🂡</div>
-            <h2>Schwimmen</h2>
-            <p>Klassisches Kartenspiel &ndash; allein gegen Computer oder mit Freunden per Spielcode auf zwei Ger&auml;ten.</p>
-            <span class="card-link">Spielen &rarr;</span>
-        </a>
+    <main>
+        <section id="top" class="hero">
+            <p class="eyebrow">Portfolio</p>
+            <h1>Hi, ich bin <span class="accent">Keno</span>.</h1>
+            <p class="hero-sub">Ich baue kleine Web-Spiele und Tools &ndash; hier ist eine Auswahl davon.</p>
+            <a class="cta" href="#projects">Projekte ansehen &darr;</a>
+        </section>
 
-        <a class="card" href="https://wortraetsel.keno-003.workers.dev" target="_blank" rel="noopener">
-            <div class="card-icon">🟩</div>
-            <h2>W&ouml;rterr&auml;tsel</h2>
-            <p>Errate das gesuchte Wort in sechs Versuchen &ndash; inklusive Statistik und Serien.</p>
-            <span class="card-link">Spielen &rarr;</span>
-        </a>
+        <section id="projects" class="section">
+            <h2 class="section-title">Projekte</h2>
+            <div class="grid">
+                <a class="card fade-in" style="--delay:0s" href="https://schwimmen.keno-003.workers.dev" target="_blank" rel="noopener">
+                    <div class="card-icon">🂡</div>
+                    <h3>Schwimmen</h3>
+                    <p>Klassisches Kartenspiel &ndash; allein gegen Computer oder mit bis zu 6 Spielern per Spielcode.</p>
+                    <span class="card-link">Spielen &rarr;</span>
+                </a>
 
-        <div class="card card-placeholder">
-            <div class="card-icon">✨</div>
-            <h2>Mehr folgt</h2>
-            <p>Weitere Projekte kommen hier bald dazu.</p>
-        </div>
+                <a class="card fade-in" style="--delay:0.08s" href="https://wortraetsel.keno-003.workers.dev" target="_blank" rel="noopener">
+                    <div class="card-icon">🟩</div>
+                    <h3>W&ouml;rterr&auml;tsel</h3>
+                    <p>Errate das gesuchte Wort in sechs Versuchen &ndash; inklusive Statistik und Serien.</p>
+                    <span class="card-link">Spielen &rarr;</span>
+                </a>
+
+                <div class="card card-placeholder fade-in" style="--delay:0.16s">
+                    <div class="card-icon">&#10024;</div>
+                    <h3>Mehr folgt</h3>
+                    <p>Weitere Projekte kommen hier bald dazu.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title">&Uuml;ber mich</h2>
+            <div class="card about-card fade-in">
+                <!-- TODO: durch deinen eigenen Text ersetzen -->
+                <p>
+                    Ich bastle gerne an kleinen Web-Projekten &ndash; von Kartenspielen bis zu
+                    Wortr&auml;tseln. Diese Seite sammelt ein paar davon zum Ausprobieren.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="contact-links">
+                <!-- TODO: E-Mail-Adresse eintragen -->
+                <a class="pill fade-in" href="mailto:deine@email.de">
+                    <span class="pill-icon">&#9993;</span> E-Mail
+                </a>
+                <a class="pill fade-in" style="--delay:0.08s" href="https://github.com/Keno081" target="_blank" rel="noopener">
+                    <span class="pill-icon">&#9733;</span> GitHub
+                </a>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>Gebaut mit Cloudflare Workers.</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Keno &middot; Gebaut mit Cloudflare Workers.</p>
     </footer>
 </body>
 </html>
